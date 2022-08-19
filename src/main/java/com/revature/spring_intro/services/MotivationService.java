@@ -1,5 +1,8 @@
 package com.revature.spring_intro.services;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MotivationService {
 
     public MotivationService() {
@@ -7,7 +10,6 @@ public class MotivationService {
     }
 
     public String provideMotivationalQuote() {
-
         return "Don't quit, suffer now and live the rest of your life like a champion";
     }
 

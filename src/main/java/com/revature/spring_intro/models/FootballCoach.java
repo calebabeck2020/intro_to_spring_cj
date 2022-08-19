@@ -1,7 +1,9 @@
 package com.revature.spring_intro.models;
 
 import com.revature.spring_intro.services.MotivationService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class FootballCoach implements Coachable {
 
     private String email;

@@ -1,7 +1,9 @@
 package com.revature.spring_intro.models;
 
 import com.revature.spring_intro.services.MotivationService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TrackCoach implements Coachable{
 
     private final MotivationService motivationService;

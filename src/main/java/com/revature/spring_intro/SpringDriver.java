@@ -4,13 +4,14 @@ import com.revature.spring_intro.models.BaseballCoach;
 import com.revature.spring_intro.models.FootballCoach;
 import com.revature.spring_intro.models.TrackCoach;
 import com.revature.spring_intro.services.MotivationService;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SpringDriver {
 
     public static void main(String[] args) {
 
-        try (ClassPathXmlApplicationContext beanContainer = new ClassPathXmlApplicationContext("beans.xml")) {
+        try (AnnotationConfigApplicationContext beanContainer = new AnnotationConfigApplicationContext(AppConfig.class)) {
 
             System.out.println("Bean Container Created...");
 
